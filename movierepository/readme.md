@@ -3,11 +3,12 @@
 It is a microservice for crud operation on Movie Database.
 
 Work Left:
-	1 Documentation 
-	2 Junit
-	3 More search operation
+<br>&nbsp;&nbsp;	1 Documentation 
+<br>&nbsp;&nbsp;	2 Junit testing
+<br>&nbsp;&nbsp;	3 More search operation
+<br>&nbsp;&nbsp;	4 Adding CotrollerAdvice
 	
 Future Scope 
-	1 centralized logging using AOP
-	2 Create Docker
-	3 Automated CI/CD pipeline
+<br>&nbsp;&nbsp;	1 centralized logging using AOP
+<br>&nbsp;&nbsp;	2 Create Docker
+<br>&nbsp;&nbsp;	3 Automated CI/CD pipeline
