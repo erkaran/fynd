@@ -43,6 +43,14 @@ public class MovieController {
 				.toUri();
 		return ResponseEntity.created(location).build();
 	}
+	
+	@PutMapping(value= "/multiple" ,produces = "application/json")
+	public ResponseEntity<Object> createMovies(@RequestBody List<Movie> movie) {
+
+		movie = movieRepository.saveAll(movie);
+		URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("").build().toUri();
+		return ResponseEntity.created(location).build();
+	}
 
 	@GetMapping(produces = "application/json")
 	public ResponseEntity<Object> getAll() {

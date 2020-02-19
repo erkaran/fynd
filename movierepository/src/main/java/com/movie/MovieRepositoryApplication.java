@@ -33,20 +33,4 @@ public class MovieRepositoryApplication extends SpringBootServletInitializer{
 	}
 	
 	
-//	@Bean
-//	CommandLineRunner runner(MovieRepository movieRepository) {
-//		return args -> {
-//			// read json and write to db
-//			ObjectMapper mapper = new ObjectMapper();
-//			TypeReference<List<Movie>> typeReference = new TypeReference<List<Movie>>(){};
-//			InputStream inputStream = TypeReference.class.getResourceAsStream("/json/users.json");
-//			try {
-//				List<Movie> movies = mapper.readValue(inputStream,typeReference);
-//				movieRepository.saveAll(movies);
-//				System.out.println("Movies Saved!");
-//			} catch (IOException e){
-//				System.out.println("Unable to save movies: " + e.getMessage());
-//			}
-//		};
-//	}
 }
