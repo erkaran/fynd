@@ -14,7 +14,7 @@ public class Genre {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private int id;
 	
-	String genre;
+	private String genre;
 	
 
 	public Genre(int id, String genre) {

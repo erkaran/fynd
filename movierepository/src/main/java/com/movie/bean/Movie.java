@@ -28,23 +28,23 @@ public class Movie {
 	@Id
 	@Column
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	int id;
+	private int id;
 	
 	@Column
-	String popularity;
+	private String popularity;
 	@Column
-	String director;
+	private String director;
 	@Column
-	String imdb_score;
+	private String imdb_score;
 	@Column
-	String name;
+	private String name;
     
     @OneToMany(cascade = CascadeType.ALL)
 	@JoinTable(
   name = "movie_genre", 
   joinColumns = @JoinColumn(name = "movie_id"), 
   inverseJoinColumns = @JoinColumn(name = "genre_id"))
-    Set<Genre> genresin;
+    private   Set<Genre> genresin;
 
 
 	public Movie(int id, String popularity, String director, String imdb_score, String name, Set<Genre> genre) {
