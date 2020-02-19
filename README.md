@@ -17,3 +17,6 @@ Future scope
 <br>&nbsp;&nbsp;2> creating docker for each service
 <br>&nbsp;&nbsp;3> creating automated ci/cd pipeline
 
+
+
+Note: All microservices are in their respected branches and branches would be merged once they are final
